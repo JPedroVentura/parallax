@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 900;
+    color: #000;
+
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p {
+    margin-bottom: 40px;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content {
+    padding: 40px;
+    background: #f3f3f3;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0), 40%, #000) 100%;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0), 40%, #000) 100%;
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0), 40%, #000) 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0), 40%, #000) 100%;
+}
+
+section.module.parallax-1 {
+    background-image: url('https://images5.alphacoders.com/825/825235.png');
+
+}
+
+section.module.parallax-2 {
+    background-image: url('https://rare-gallery.com/uploads/posts/4516398-watch_dogs-watch_dogs-2-dedsec-hacking.jpg');
+}
+
+section.module.parallax-3 {
+    background-image: url('https://user-content.gitlab-static.net/1a415b2973264a8437f68a6b8233fab45dfedfb4/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f56616e64616c427974652f6465647365632d67727562322d7468656d652f6d61696e2f6d656469612f70726576696577732f707265766965772d726564736b756c6c2e706e67');
+}
+
+section.module.parallax h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+
